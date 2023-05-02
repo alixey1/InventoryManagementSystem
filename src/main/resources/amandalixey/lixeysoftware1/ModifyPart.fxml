@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="amandalixey.lixeysoftware1.ModifyPartController">
+    <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#accae3" height="241.0" layoutX="18.0" layoutY="68.0" stroke="BLACK" strokeType="INSIDE" width="567.0" />
+        <Label fx:id="partIDLabel" layoutX="51.0" layoutY="87.0" text="ID" />
+        <Label fx:id="partNameLabel" layoutX="51.0" layoutY="121.0" text="Name" />
+        <Label fx:id="partInvLabel" layoutX="51.0" layoutY="151.0" text="Inv" />
+        <Label fx:id="partPriceLabel" layoutX="51.0" layoutY="183.0" text="Price/Cost" />
+        <Label fx:id="partMaxLabel" layoutX="51.0" layoutY="214.0" text="Max" />
+        <Label fx:id="partMachineIDLabel" layoutX="51.0" layoutY="244.0" text="Machine ID" />
+        <Separator layoutX="12.0" layoutY="51.0" prefHeight="2.0" prefWidth="547.0" />
+        <TextField fx:id="modifyPartIDText" layoutX="151.0" layoutY="83.0" />
+        <TextField fx:id="modifyPartNameText" layoutX="151.0" layoutY="117.0" />
+        <TextField fx:id="modifyPartInvText" layoutX="151.0" layoutY="147.0" />
+        <TextField fx:id="modifyPartsPriceText" layoutX="151.0" layoutY="179.0" />
+        <TextField fx:id="modifyPartsMaxText" layoutX="151.0" layoutY="210.0" />
+        <TextField fx:id="modifyPartsMachineIDText" layoutX="151.0" layoutY="240.0" />
+        <Label fx:id="partMinLabel" layoutX="319.0" layoutY="214.0" text="Min" />
+        <TextField fx:id="modifyPartsMinText" layoutX="357.0" layoutY="210.0" />
+        <RadioButton fx:id="modifyInHouseRadio" layoutX="270.0" layoutY="26.0" mnemonicParsing="false" onAction="#onModifyInHouseRadioClicked" text="In-House">
+         <toggleGroup>
+            <ToggleGroup fx:id="RadioToggle" />
+         </toggleGroup></RadioButton>
+        <RadioButton fx:id="modifyOutsourcedRadio" layoutX="388.0" layoutY="26.0" mnemonicParsing="false" onAction="#onModifyOutsourcedRadioClicked" text="Outsourced" toggleGroup="$RadioToggle" />
+        <Button fx:id="modifySavePartButton" layoutX="304.0" layoutY="333.0" mnemonicParsing="false" onAction="#onModifySavePartButtonClicked" text="Save" />
+        <Button fx:id="modifyCancelPartButton" layoutX="368.0" layoutY="333.0" mnemonicParsing="false" onAction="#onModifyCancelPartButtonClicked" text="Cancel" />
+      <Label fx:id="modifyPartLabel" layoutX="18.0" layoutY="11.0" prefHeight="20.0" prefWidth="90.0" text="Modify Part">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Label>
+    </children>
+
+</AnchorPane>

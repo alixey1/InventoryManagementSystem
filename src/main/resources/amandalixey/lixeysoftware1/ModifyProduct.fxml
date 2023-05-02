@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="532.0" prefWidth="680.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="amandalixey.lixeysoftware1.modifyProductController2">
+    <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#accae3" height="445.0" layoutX="22.0" layoutY="68.0" stroke="BLACK" strokeType="INSIDE" width="635.0" />
+        <Separator layoutX="14.0" layoutY="52.0" prefHeight="3.0" prefWidth="567.0" />
+        <Label fx:id="productIDLabel" layoutX="51.0" layoutY="87.0" text="ID" />
+        <Label fx:id="productNameLabel" layoutX="51.0" layoutY="121.0" text="Name" />
+        <Label fx:id="productInvLabel" layoutX="51.0" layoutY="151.0" text="Inv" />
+        <Label fx:id="productPriceLabel" layoutX="51.0" layoutY="183.0" text="Price/Cost" />
+        <TextField fx:id="modifyProductIDText" layoutX="151.0" layoutY="83.0" prefHeight="25.0" prefWidth="78.0" />
+        <TextField fx:id="modifyProductNameText" layoutX="151.0" layoutY="117.0" prefHeight="25.0" prefWidth="78.0" />
+        <TextField fx:id="modifyProductInvText" layoutX="151.0" layoutY="147.0" prefHeight="25.0" prefWidth="78.0" />
+        <TextField fx:id="modifyProductPriceText" layoutX="151.0" layoutY="179.0" prefHeight="25.0" prefWidth="78.0" />
+        <TextField fx:id="modifyProductMaxText" layoutX="151.0" layoutY="210.0" prefHeight="25.0" prefWidth="78.0" />
+        <Label fx:id="modifyProductMinLabel" layoutX="53.0" layoutY="245.0" prefHeight="17.0" prefWidth="23.0" text="Min" />
+        <TextField fx:id="modifyProductMinText" layoutX="151.0" layoutY="241.0" prefHeight="25.0" prefWidth="78.0" />
+        <Label fx:id="productMaxLabel" layoutX="51.0" layoutY="214.0" text="Max" />
+        <TextField fx:id="partSearch" layoutX="472.0" layoutY="83.0" onAction="#onPartSearch" prefHeight="25.0" prefWidth="163.0" text="Search by parts ID or Name" />
+        <TableView fx:id="modifyAddPartToProductTable" layoutX="250.0" layoutY="114.0" prefHeight="156.0" prefWidth="385.0">
+            <columns>
+                <TableColumn fx:id="partIDCol" prefWidth="66.0" text="Part ID" />
+                <TableColumn fx:id="partNameCol" prefWidth="95.0" text="Part Name" />
+                <TableColumn fx:id="partInventoryLevelCol" prefWidth="100.0" text="Inventory Level" />
+                <TableColumn fx:id="partPriceCol" prefWidth="123.0" text="Price / Cost per Unit" />
+            </columns>
+        </TableView>
+        <Button fx:id="modifyAddPartToProductButton" layoutX="581.0" layoutY="278.0" mnemonicParsing="false" onAction="#onModifyAddPartToProductButtonClicked" text="Add" />
+        <TableView fx:id="modifyPartRemovalTable" layoutX="250.0" layoutY="310.0" prefHeight="156.0" prefWidth="385.0">
+            <columns>
+                <TableColumn fx:id="partRemovalIDCol" prefWidth="66.0" text="Part ID" />
+                <TableColumn fx:id="partRemovalNameCol" prefWidth="95.0" text="Part Name" />
+                <TableColumn fx:id="partRemovalInventoryLevelCol" prefWidth="100.0" text="Inventory Level" />
+                <TableColumn fx:id="partRemovalPriceCol" prefWidth="123.0" text="Price / Cost per Unit" />
+            </columns>
+        </TableView>
+        <Button fx:id="removeAssociatedPartButton" layoutX="482.0" layoutY="473.0" mnemonicParsing="false" onAction="#onRemoveAssociatedPartButtonClicked" text="Remove associated part" />
+        <Button fx:id="saveModifyProductButton" layoutX="63.0" layoutY="461.0" mnemonicParsing="false" onAction="#onSaveModifyProductButtonClicked" text="Save" />
+        <Button fx:id="cancelModifyProductButton" layoutX="138.0" layoutY="461.0" mnemonicParsing="false" onAction="#onCancelModifyProductButtonClicked" text="Cancel" />
+      <Label layoutX="31.0" layoutY="22.0" text="Modify Product">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+    </children>
+</AnchorPane>
